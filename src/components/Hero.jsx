@@ -16,7 +16,25 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I'm a Frontend Developer </p>
         </div>
       </div>
-      {/* <ComputersCanvas/> */}
+      <ComputersCanvas />
+      <div className='absolute xs:bottom-[-18px]
+      bottom-25 w-full flex justify-center
+      items-center mt-[20px]'>
+        <a href='#about'>
+          <div className=' xs:w-7 w-[35px] xs:h-[50px] h-[60px] 
+          rounded-3xl border-4
+           border-secondary flex 
+           justify-center items-start p-1'>
+            <motion.dev
+              animate={{ y: [0, 20, 0] }}
+              transition={{duration:1.5,repeat:Infinity ,repeatType:'loop'}}
+              className='xs:w-2  w-3 xs:h-2 h-2
+               rounded-full bg-secondary mb-1'
+            />
+           </div>
+        </a>
+
+      </div>
 
     </section>
   )

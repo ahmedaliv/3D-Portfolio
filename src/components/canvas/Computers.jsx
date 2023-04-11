@@ -1,8 +1,8 @@
 import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls,Preload,useGLTF} from '@react-three/drei';
+import CanvasLoader from '../Loader';
 
-import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -21,17 +21,15 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
+        scale={isMobile ? 0.7 : 0.74}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   );
 };
-
-const ComputersCanvas = () => {
+const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
@@ -52,7 +50,6 @@ const ComputersCanvas = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
-
   return (
     <Canvas
       frameloop='demand'
@@ -75,4 +72,4 @@ const ComputersCanvas = () => {
   );
 };
 
-export default ComputersCanvas;
+export default ComputerCanvas
