@@ -3,6 +3,14 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls,Preload,useGLTF} from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
+const handleTouchStart = (event) => {
+  // Set touch-action on canvas element
+  event.target.style.touchAction = 'pan-down';
+  // Set touch-action on other elements created by Canvas component
+  event.target.parentNode.style.touchAction = 'pan-down';
+  event.target.parentNode.parentNode.style.touchAction = 'pan-down';
+
+};
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -57,6 +65,7 @@ const ComputerCanvas = () => {
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      onTouchStart={handleTouchStart}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
