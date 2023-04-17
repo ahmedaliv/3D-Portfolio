@@ -25,7 +25,7 @@ const Hero = () => {
           rounded-3xl border-4
            border-secondary flex 
            justify-center items-start p-1'>
-            <motion.dev
+            <motion.div
               animate={{ y: [0, 20, 0] }}
               transition={{duration:1.5,repeat:Infinity ,repeatType:'loop'}}
               className='xs:w-2  w-3 xs:h-2 h-2
