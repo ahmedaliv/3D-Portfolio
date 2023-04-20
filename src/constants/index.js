@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  live,
 } from "../assets";
 
 export const navLinks = [
@@ -174,58 +175,63 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Runhill",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
+"Runhill is a Bootstrap 5 template built with HTML5 and CSS3 for construction-related businesses. It features a clean and modern design with RTL support for Arabic and Hebrew languages. The template includes a customizable slider, Google Map, and integrated FontAwesome.",
+      tags: [
       {
-        name: "react",
+        name: "bootstrap",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "html",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ahmedaliv/Runhill",
+    live: live,
+    live_link:"https://ahmedaliv.github.io/Runhill/"
   },
   {
-    name: "Job IT",
+    name: "Clothing Pallete",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
+"Clothing Pallete is a website project for a clothing shop that includes viewing products , registeration,form validations, Google Maps, and other features. The website has a modern and visually pleasing design "
+      ,tags: [
       {
-        name: "react",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "html",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: tripguide,
+    source_code_link: "https://github.com/ahmedaliv/Clothing-Pallete",
+    live: live,
+    live_link:"https://ahmedaliv.github.io/Clothing-Pallete/"
+
   },
   {
-    name: "Trip Guide",
+    name: "Rocker",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
+"Rocker Furniture Store Opencart Responsive web app is specially designed for store like furniture, wood, timber, home decor, craft, table, chair, art, light, handicraft, antique, kitchen, appliance, accessories, fashion, jewelry. looking good with it's awesome and cool color combinationLayout design is also unique to sale any types of product. ",
+      tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
@@ -233,8 +239,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: jobit,
+    source_code_link: "https://github.com/ahmedaliv/Rocker",
+    live: live,
+    live_link:"https://ahmedaliv.github.io/Rocker/"
   },
 ];
 
